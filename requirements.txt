@@ -1,10 +1,12 @@
 Homepage:
     Tabs: Home, Events, Coach, Practice (Timings & Location), Gallery, Contact, About Us
-    Home: About Us, Upcoming Events, Latest News, Latest Photos, Latest Videos
-    Events: Upcoming Events, Past Events
-    Coach: About Coach, Achievements, Upcoming Events, Past Events
-    Practice: Practice Timings, Practice Location
-    Gallery: Latest Photos, Latest Videos
-    Contact: Contact Details, Contact Form
-    About Us: About Us, Upcoming Events, Past Events
-    
+
+Home: About Us, Upcoming Events, Latest News, Latest Photos, Latest Videos
+Events: Upcoming Events, Past Events
+Coach: About Coach, Achievements, Upcoming Events, Past Events
+Alumni: About Alumni, Achievements
+Students(current): About Students, Achievements, Upcoming Events, Past Events
+Practice: Practice Timings, Practice Location
+Gallery: Latest Photos, Latest Videos
+Contact: Contact Details, Contact Form
+About Us: About Us, Upcoming Events, Past Events
