@@ -2,7 +2,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-    </head>
+        <style>
+          #slideshow {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+          }
+      
+          .slides {
+            display: none;
+          }
+      
+          img {
+            width: 100%;
+            height: auto;
+          }
+        </style>
+      </head>
   <head>
     <title>Taekwondo Club </title>
     <meta charset="utf-8" />
@@ -27,6 +43,47 @@
         </ul>
       </nav>
     </header>
+
+    <div id="slideshow">
+      <div class="slides">
+        <img src="figures/homepage/image1.jpg" alt="Image 1">
+      </div>
+      <div class="slides">
+        <img src="figures/homepage/image2.jpg" alt="Image 2">
+      </div>
+      <div class="slides">
+        <img src="figures/homepage/image3.jpg" alt="Image 3">
+      </div>
+      <br>
+    <div class="bullets">
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+    </div>
+    </div>
+
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var bullets = document.getElementsByClassName("bullet");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < bullets.length; i++) {
+    bullets[i].className = bullets[i].className.replace(" active-bullet", "");
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  bullets[slideIndex-1].className += " active-bullet";
+  setTimeout(showSlides, 1000); // Change image every 5 seconds
+}
+
+    </script>
     <main>
       <section id="home">
         <h2>Home</h2>
